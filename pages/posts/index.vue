@@ -1,7 +1,7 @@
 <template>
     <div>
         <post v-for="post in posts" :key="post.id" :post="post"></post>
-    </div>
+    </div> 
 </template>
 
 <script>
@@ -13,6 +13,10 @@
             return {
                 posts: []
             }
+        },
+        layout: 'posts',
+        head: {
+            title: 'Posts'
         },
         components: {
             Post

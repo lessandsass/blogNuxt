@@ -13,6 +13,11 @@ export default {
             post: null
         }
     },
+    head () {
+        return {
+            title: this.post.title
+        }
+    },
     components: {
         Post
     },
